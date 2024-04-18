@@ -42,6 +42,9 @@ def get_weather(home,api_key):
   visibility = data["visibility"]
   print(f"видимость: {visibility} м")
 
+  return temp,weather,wind_speed,name,temp_min,temp_max,clouds,visibility
+
+
 def main():
   print("Здравствуйте,это 'Погода'")
   home = input("Введите ваше местоположение:")
